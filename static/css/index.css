@@ -1,0 +1,175 @@
+/* Reset básico para espaçamentos e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff; /* Cor de fundo geral */
+    font-family: 'Open Sans', sans-serif
+}
+
+header {
+    height: 13vh; /* Verifique se isso está proporcionando altura suficiente */
+    padding: 0 10%; /* Verifique se o padding não está escondendo o logo */
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-image: url('../imagens/Logotipo.png'); /* Atualize o caminho conforme necessário */
+    background-size: cover; /* Garante que o logo preencha todo o espaço do contêiner */
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem de fundo */
+    width: 13vh; /* Ajuste conforme necessário para o tamanho desejado */
+    height: 11vh; /* A mesma medida da largura para criar um círculo perfeito */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 2.5vh;
+    margin-left: 6vh;
+}
+
+.section-black {
+    background-image: url('../imagens/hero.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative; /* Adiciona posicionamento relativo ao contêiner */
+}
+
+.section-black h1 {
+    font-size: 4vh; /* Aumenta o tamanho da fonte */
+    margin-top: -10vh; /* Ajusta a posição para mais acima */
+    font-weight: bold;
+    color: white; /* Muda a cor do texto para branco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra preta para melhor contraste */
+}
+
+.section-white {
+    background-color: white; /* Seção branca */
+    padding: 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.intro-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 0;
+    background-color: #f9f9f9; /* Cor de fundo suave para destacar a seção */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    margin-top: 5vh;
+}
+
+.intro-text {
+    flex: 1;
+    margin-right: 2vh;
+    padding: 2vh; /* Espaçamento interno para melhor legibilidade */
+}
+
+.intro-text p {
+    font-family: 'Arial', sans-serif; /* Fonte legível */
+    font-size: 1.2em; /* Tamanho da fonte maior para melhor leitura */
+    line-height: 1.6; /* Espaçamento entre linhas para legibilidade */
+    color: #333; /* Cor do texto */
+}
+
+.intro-image {
+    flex: none;
+    margin-left: 4vh;
+    margin-right: 4vh;
+}
+
+.intro-image img {
+    width: 25vh;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para a imagem */
+}
+
+
+.section-column {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em uma coluna vertical */
+    align-items: center; /* Alinha os itens horizontalmente no centro */
+    justify-content: center; /* Alinha os itens verticalmente no centro */
+    text-align: center; /* Alinha o texto no centro */
+    width: 20%; /* Largura de cada coluna */
+    margin: 0 2.5vh; /* Espaçamento entre as colunas */
+}
+
+.section-column img {
+    width: 100%; /* Faz a imagem preencher a largura da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 2vh; /* Espaço entre a imagem e o texto abaixo dela */
+}
+.section-row {
+    display: flex;
+    justify-content: space-around; /* Distribui espaçamento uniformemente entre as colunas */
+    align-items: center; /* Alinha verticalmente as colunas */
+    flex-wrap: wrap; /* Permite que as colunas se ajustem em várias linhas conforme necessário */
+    padding: 0 10%; /* Padding nas laterais para não encostar nas bordas da tela */
+    margin-top: 10vh;
+}
+
+
+
+.section-button {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 1vh 2vh;
+    border-radius: 5px;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+}
+
+h1, h2 {
+    margin: 2vh 0; /* Espaçamento vertical proporcional à altura da viewport */
+}
+
+p {
+    color: #333; /* Cor cinza escuro para melhor leitura em fundo branco */
+    margin: 1vh 0; /* Espaçamento vertical ajustado */
+}
+
+
+footer {
+    margin-top: 5vh;
+    background-color: #333; /* Cor de fundo do rodapé */
+    text-align: center;
+    padding: 2vh 0; /* Espaçamento interno vertical */
+}
+
+.footer-content p {
+    font-family: 'Open Sans', sans-serif; /* Fonte consistente com o restante do site */
+    color: #fff; /* Cor do texto no rodapé */
+
+    font-size: 1em; /* Tamanho da fonte */
+}
