@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    background: #f9f9f9;
     color: #333;
 }
 
@@ -40,12 +40,14 @@ header {
     font-size: 2.5vh;
     margin-left: 6vh;
 }
+
 .contact-section {
     padding: 4em 2em;
     background-color: #f9f9f9;
     text-align: center;
 }
-.container h1{
+
+.container h1 {
     font-size: 1.7em;
 }
 
@@ -58,6 +60,7 @@ header {
     font-size: 1.2em; /* Tamanho da fonte para os detalhes de contato */
     margin-bottom: 0.5em; /* Espaçamento vertical após cada detalhe de contato */
 }
+
 footer {
     background-color: #333; /* Cor de fundo do rodapé */
     text-align: center;
@@ -67,6 +70,58 @@ footer {
 .footer-content p {
     font-family: 'Open Sans', sans-serif; /* Fonte consistente com o restante do site */
     color: #fff; /* Cor do texto no rodapé */
-
     font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 2vh;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 2vh 0;
+        font-size: 1.8vh;
+        margin-right: 1.5vh;
+    }
+
+    .logo {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .contact-section {
+        padding: 2em 1em;
+    }
+
+    .container h1 {
+        font-size: 1.5em;
+    }
+
+    .contact-info h2 {
+        font-size: 1.2em;
+        margin-top: 1.5em;
+    }
+
+    .contact-info p {
+        font-size: 0.7em;
+    }
+
+    footer {
+        margin-top: 17vh;
+        padding: 2vh 1vh;
+    }
+
+    .footer-content p {
+        font-size: 0.8em;
+
+    }
 }

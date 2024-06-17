@@ -41,7 +41,6 @@ header {
     margin-left: 6vh;
 }
 
-
 .servicos_inicial {
     width: 100%;
     background-color: #ffffff;
@@ -85,6 +84,36 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 2vh;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 2vh 0;
+        font-size: 1.8vh;
+        margin-right: 1.5vh;
+    }
+
+    .logo {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .servicos_inicial {
+        padding: 2vh 1vh;
+        margin-top: 2vh;
+        margin-bottom: 0.2vh;
+        font-size: 2vh;
+    }
+
     .services-container {
         flex-direction: column;
         align-items: center;
@@ -92,5 +121,18 @@ footer {
 
     .service {
         width: 80%; /* Aumenta a largura dos serviços em telas menores */
+        margin: 2vh 0; /* Espaço vertical entre serviços */
+    }
+    .service h2{
+        font-size: 2.5vh;
+    }
+    .service img {
+        width: 60%; /* Ajusta a largura da imagem em telas menores */
+    }
+    p{
+        font-size: 2vh;
+    }
+    footer {
+        padding: 2vh 1vh;
     }
 }

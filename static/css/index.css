@@ -7,7 +7,7 @@
 
 body {
     background-color: #fff; /* Cor de fundo geral */
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -76,6 +76,7 @@ header {
     align-items: center;
     text-align: center;
 }
+
 .intro-row {
     display: flex;
     justify-content: space-between;
@@ -113,7 +114,6 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para a imagem */
 }
 
-
 .section-column {
     display: flex;
     flex-direction: column; /* Organiza o conteúdo em uma coluna vertical */
@@ -130,6 +130,7 @@ header {
     margin-bottom: 2vh; /* Espaço entre a imagem e o texto abaixo dela */
     border-radius: 2vh;
 }
+
 .section-row {
     display: flex;
     justify-content: space-around; /* Distribui espaçamento uniformemente entre as colunas */
@@ -138,8 +139,6 @@ header {
     padding: 0 10%; /* Padding nas laterais para não encostar nas bordas da tela */
     margin-top: 10vh;
 }
-
-
 
 .section-button {
     text-decoration: none;
@@ -151,7 +150,6 @@ header {
     margin-top: 2vh;
 }
 
-
 h1, h2 {
     margin: 2vh 0; /* Espaçamento vertical proporcional à altura da viewport */
 }
@@ -160,7 +158,6 @@ p {
     color: #333; /* Cor cinza escuro para melhor leitura em fundo branco */
     margin: 1vh 0; /* Espaçamento vertical ajustado */
 }
-
 
 footer {
     margin-top: 5vh;
@@ -172,6 +169,70 @@ footer {
 .footer-content p {
     font-family: 'Open Sans', sans-serif; /* Fonte consistente com o restante do site */
     color: #fff; /* Cor do texto no rodapé */
-
     font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 2vh;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 2vh 0;
+        font-size: 1.8vh;
+        margin-right: 1.5vh;
+    }
+    .logo {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .section-black {
+        height: 50vh;
+    }
+
+    .section-black h1 {
+        font-size: 3vh;
+        margin-top: 0;
+    }
+
+    .intro-row {
+        flex-direction: column;
+        padding: 2vh;
+    }
+
+    .intro-text {
+        margin: 2vh 0;
+        font-size: 1.5vh;
+    }
+
+    .section-row {
+        flex-direction: column;
+        padding: 2vh;
+    }
+    .section-row img {
+        width: 50%;
+    }
+    .section-column {
+        width: 100%;
+        margin: 2vh 0;
+    }
+
+    .section-button {
+        font-size: 2vh;
+        padding: 1vh 2vh;
+    }
+
+    footer {
+        padding: 2vh 0;
+    }
 }

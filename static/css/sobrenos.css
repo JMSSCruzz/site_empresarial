@@ -41,7 +41,6 @@ header {
     margin-left: 6vh;
 }
 
-
 .about-section {
     padding: 4em 2em;
     background-color: #f9f9f9;
@@ -99,6 +98,71 @@ footer {
 .footer-content p {
     font-family: 'Open Sans', sans-serif; /* Fonte consistente com o restante do site */
     color: #fff; /* Cor do texto no rodapé */
-
     font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 2vh;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 2vh 0;
+        font-size: 1.8vh;
+        margin-right: 1.5vh;
+    }
+
+    .logo {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .about-section {
+        padding: 2em 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.8em;
+        line-height: 1.4;
+    }
+
+    .team-row {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .team-member {
+        max-width: 100%;
+        margin: 1em 0;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        padding: 2vh 0;
+    }
+
+    .footer-content p {
+        font-size: 0.8em;
+    }
 }
