@@ -2,39 +2,83 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #ffffff;
     color: #333;
 }
 
 header {
-    background-color: #007BFF;
-    color: white;
-    padding: 20px 0;
+    height: 13vh; /* Verifique se isso está proporcionando altura suficiente */
+    padding: 0 10%; /* Verifique se o padding não está escondendo o logo */
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-image: url('../imagens/Logotipo.png'); /* Atualize o caminho conforme necessário */
+    background-size: cover; /* Garante que o logo preencha todo o espaço do contêiner */
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem de fundo */
+    width: 13vh; /* Ajuste conforme necessário para o tamanho desejado */
+    height: 11vh; /* A mesma medida da largura para criar um círculo perfeito */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 2.5vh;
+    margin-left: 6vh;
+}
+
+
+.servicos_inicial {
+    width: 100%;
+    background-color: #ffffff;
+    color: #333;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     text-align: center;
+    padding: 2vh 0; /* Padding vertical para separar visualmente o conteúdo */
 }
 
 .services-container {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background: white;
+    flex-wrap: wrap; /* Permite que os serviços se ajustem ao reduzir a largura da tela */
+    padding: 2vh 0;
 }
 
 .service {
-    background: #e9ecef;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    padding: 2vh; /* Padding interno baseado na altura da viewport */
+    border-radius: 1vh; /* Raio da borda para suavizar as bordas */
+    width: 30%; /* Largura como percentagem da largura do contêiner */
+    box-shadow: 0 0.4vh 0.8vh rgba(0, 0, 0, 0.1);
+    margin: 1vh; /* Margem para espaço entre serviços */
+    text-align: center;
 }
 
-.service h2 {
-    color: #007BFF;
+.service img {
+    width: 40%; /* Largura máxima da imagem para garantir que não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 1vh; /* Espaço abaixo da imagem */
 }
 
 footer {
+    margin-top: 5vh;
     text-align: center;
-    padding: 10px 0;
+    padding: 2vh 0;
     background-color: #333;
     color: white;
 }
@@ -44,9 +88,8 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .service {
-        width: 80%;
-        margin-bottom: 20px;
+        width: 80%; /* Aumenta a largura dos serviços em telas menores */
     }
 }

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+}
+
+header {
+    height: 13vh; /* Verifique se isso está proporcionando altura suficiente */
+    padding: 0 10%; /* Verifique se o padding não está escondendo o logo */
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-image: url('../imagens/Logotipo.png'); /* Atualize o caminho conforme necessário */
+    background-size: cover; /* Garante que o logo preencha todo o espaço do contêiner */
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem de fundo */
+    width: 13vh; /* Ajuste conforme necessário para o tamanho desejado */
+    height: 11vh; /* A mesma medida da largura para criar um círculo perfeito */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 2.5vh;
+    margin-left: 6vh;
+}
+.contact-section {
+    padding: 4em 2em;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.container h1{
+    font-size: 1.7em;
+}
+
+.contact-info h2 {
+    color: #007BFF; /* Cor para os subtítulos na seção de contatos */
+    margin-top: 2em; /* Espaçamento vertical antes de cada subtítulo */
+}
+
+.contact-info p {
+    font-size: 1.2em; /* Tamanho da fonte para os detalhes de contato */
+    margin-bottom: 0.5em; /* Espaçamento vertical após cada detalhe de contato */
+}
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    text-align: center;
+    padding: 2vh 0; /* Espaçamento interno vertical */
+}
+
+.footer-content p {
+    font-family: 'Open Sans', sans-serif; /* Fonte consistente com o restante do site */
+    color: #fff; /* Cor do texto no rodapé */
+
+    font-size: 1em; /* Tamanho da fonte */
+}
