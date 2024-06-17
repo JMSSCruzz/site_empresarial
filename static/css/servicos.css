@@ -73,6 +73,7 @@ header {
     width: 40%; /* Largura máxima da imagem para garantir que não ultrapasse o contêiner */
     height: auto; /* Mantém a proporção da imagem */
     margin-bottom: 1vh; /* Espaço abaixo da imagem */
+    border-radius: 2vh;
 }
 
 footer {

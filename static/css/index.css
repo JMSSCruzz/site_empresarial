@@ -128,6 +128,7 @@ header {
     width: 100%; /* Faz a imagem preencher a largura da coluna */
     height: auto; /* Mantém a proporção da imagem */
     margin-bottom: 2vh; /* Espaço entre a imagem e o texto abaixo dela */
+    border-radius: 2vh;
 }
 .section-row {
     display: flex;
@@ -149,6 +150,7 @@ header {
     font-size: 2.5vh;
     margin-top: 2vh;
 }
+
 
 h1, h2 {
     margin: 2vh 0; /* Espaçamento vertical proporcional à altura da viewport */
