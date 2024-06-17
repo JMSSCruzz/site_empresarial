@@ -117,13 +117,13 @@ footer {
 
     .navigation a {
         margin: 2vh 0;
-        font-size: 1.8vh;
-        margin-right: 1.5vh;
+        font-size: 0.7em;
+        margin-left: 0.4em;
     }
 
     .logo {
-        width: 10vh;
-        height: 10vh;
+        width: 4em;
+        height: 4em;
     }
 
     .about-section {
